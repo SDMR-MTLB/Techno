@@ -1,0 +1,45 @@
+Chrono/                                   (project root)
+├── public/                               (web root)
+│   ├── index.php                          (homepage)
+│   ├── products.php                        (public product listing – to be created)
+│   ├── services.php                         (public service listing – to be created)
+│   ├── product.php                           (product detail with cart – to be created)
+│   ├── request-product.php                    (product request form – to be created)
+│   ├── request-service.php                     (service request form – to be created)
+│   ├── confirm.php                             (confirmation page – to be created)
+│   ├── contact.php                              (optional – to be created)
+│   ├── admin/                                   (admin area)
+│   │   ├── login.php
+│   │   ├── logout.php
+│   │   ├── dashboard.php
+│   │   ├── products/                             (admin product management)
+│   │   │   ├── index.php
+│   │   │   ├── add.php
+│   │   │   ├── edit.php
+│   │   │   └── delete.php
+│   │   └── services/                              (admin service management)
+│   │       ├── index.php
+│   │       ├── add.php
+│   │       ├── edit.php
+│   │       └── delete.php
+│   ├── assets/                                    (static files)
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   └── images/
+│   └── includes/                                  (reusable components)
+│       └── header.php
+├── config/                                        (configuration)
+│   ├── database.php
+│   └── app.php
+├── core/                                          (core helpers)
+│   ├── auth.php
+│   ├── session.php
+│   ├── csrf.php
+│   ├── validator.php
+│   ├── upload.php
+│   └── db.php
+├── uploads/                                        (product images)
+├── logs/                                           (error logs)
+├── models/                                         (model classes – to be created)
+└── controllers/                                    (controller classes – to be created)

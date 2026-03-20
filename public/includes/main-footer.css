@@ -1,0 +1,49 @@
+<?php
+// public/includes/footer.php
+?>
+    </main> <!-- end container -->
+
+    <footer>
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h5>Customer Service</h5>
+                <a href="<?= BASE_URL ?>/contact.php">Help Center</a>
+                <a href="<?= BASE_URL ?>/shipping.php">Shipping Policy</a>
+                <a href="<?= BASE_URL ?>/returns.php">Returns Policy</a>
+                <a href="<?= BASE_URL ?>/faq.php">FAQs</a>
+            </div>
+            <div class="footer-col">
+                <h5>Company</h5>
+                <a href="<?= BASE_URL ?>/about.php">About Us</a>
+                <a href="<?= BASE_URL ?>/careers.php">Careers</a>
+                <a href="<?= BASE_URL ?>/press.php">Press</a>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <a href="<?= BASE_URL ?>/privacy.php">Privacy Policy</a>
+                <a href="<?= BASE_URL ?>/terms.php">Terms of Service</a>
+            </div>
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <div class="newsletter-foot">
+                    <input type="email" placeholder="Your email">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <a href="<?= BASE_URL ?>/offices.php"><i class="fas fa-map-marker-alt"></i> Our Offices</a>
+                <a href="<?= BASE_URL ?>/contact.php"><i class="fas fa-envelope"></i> Support</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © <?= date('Y') ?> Pisowifi Vendo. All rights reserved. Quality networking solutions.
+        </div>
+    </footer>
+</body>
+</html>

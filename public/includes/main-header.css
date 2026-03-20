@@ -1,0 +1,52 @@
+<?php
+// public/includes/header.php
+// Expects $pageTitle to be set before inclusion.
+// Also uses $isLoggedIn which should be defined in the page.
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= htmlspecialchars($pageTitle) ?> - Pisowifi Vendo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main-style.css">
+</head>
+<body>
+    <!-- top utility bar -->
+    <div class="top-utility">
+        <div class="utility-links">
+            <a href="<?= BASE_URL ?>/contact.php"><i class="fas fa-headset"></i> Support</a>
+            <a href="<?= BASE_URL ?>/track.php"><i class="fas fa-calendar-check"></i> Track Booking</a>
+            <a href="<?= BASE_URL ?>/faq.php"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="<?= BASE_URL ?>/returns.php"><i class="fas fa-undo-alt"></i> Returns</a>
+        </div>
+        <div class="lang-currency">
+            <a href="#"><i class="fas fa-globe"></i> EN</a>
+            <a href="#"><i class="fas fa-php"></i> PHP</a>
+        </div>
+    </div>
+
+    <!-- main header -->
+    <div class="main-header">
+        <div class="logo-area">
+            <a href="<?= BASE_URL ?>/index.php" class="logo">Pisowifi Vendo</a>
+            <a href="<?= BASE_URL ?>/products.php" class="browse-cat"><i class="fas fa-bars"></i> Browse Products</a>
+        </div>
+        <form class="search-bar" action="<?= BASE_URL ?>/products.php" method="get">
+            <input type="text" name="search" placeholder="Search for routers, cables, services...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="user-actions">
+            <?php if ($isLoggedIn): ?>
+                <a href="<?= BASE_URL ?>/dashboard.php"><i class="fas fa-user"></i></a>
+                <a href="<?= BASE_URL ?>/dashboard.php?tab=bookings"><i class="fas fa-calendar-alt"></i></a>
+                <a href="<?= BASE_URL ?>/logout.php"><i class="fas fa-sign-out-alt"></i></a>
+            <?php else: ?>
+                <a href="<?= BASE_URL ?>/login.php" class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="<?= BASE_URL ?>/register.php"><i class="fas fa-user-plus"></i></a>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <main class="container">
